@@ -17,7 +17,7 @@ class HelloWorld {
     else Console.WriteLine("number is composite");
 
     // first time i experienced true despair while trying to understand how this shit works 
-    //even Stella understood but not me
+    //even Stella understood faster than me
   //what the fuck dude 
     
   }
