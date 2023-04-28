@@ -26,3 +26,10 @@ for i in range(0,n):
 
 for i in range(ceil(n/line)):
     print(list2[i])
+
+print("elements work as in arrays")
+
+i = int(input("i="))
+j = int(input("j="))
+
+print(list2[i][j])
