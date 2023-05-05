@@ -1,0 +1,50 @@
+using System;
+
+namespace klinika
+{
+    public static class Program
+    { 
+
+        public static void Main(string[] args)
+        {
+            string snake = "________O________";
+            int O_index = snake.IndexOf("O");
+            string direc;
+
+            Console.WriteLine(snake);
+
+            
+            while (true)
+            {
+                Console.WriteLine("Should I Stay or Should I Go (l/r):");
+                direc = Console.ReadLine();
+                if (direc.ToLower() == "r")
+                {
+                    snake = GoRight(snake,O_index);
+                    O_index++;
+                    Console.WriteLine(snake);
+                }
+                else if (direc.ToLower() == "l")
+                {
+                    snake = GoLeft(snake, O_index);
+                    O_index--;
+                    Console.WriteLine(snake);
+                }
+
+            }
+
+        }
+
+        public static string GoRight(string snake, int indx)
+        {
+            return snake = snake.Remove(indx, 1).Insert(indx + 1, "O");
+        }
+
+        public static string GoLeft(string snake, int indx)
+        {
+            return snake = snake.Remove(indx, 1).Insert(indx - 1, "O");
+        }
+
+    }
+
+}
