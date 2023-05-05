@@ -18,28 +18,18 @@ namespace klinika
                 direc = Console.ReadLine();
                 if (direc.ToLower() == "r")
                 {
-                    snake = GoRight(snake,O_index);
+                    snake = snake.Remove(O_index, 1).Insert(O_index + 1, "O");
                     O_index++;
                 }
                 else if (direc.ToLower() == "l")
                 {
-                    snake = GoLeft(snake, O_index);
+                    snake = snake.Remove(O_index, 1).Insert(O_index - 1, "O");
                     O_index--;
                 }
                 
                 Console.Clear();
             }
 
-        }
-
-        public static string GoRight(string snake, int indx)
-        {
-            return snake = snake.Remove(indx, 1).Insert(indx + 1, "O");
-        }
-
-        public static string GoLeft(string snake, int indx)
-        {
-            return snake = snake.Remove(indx, 1).Insert(indx - 1, "O");
         }
 
     }
