@@ -1,5 +1,5 @@
 using System;
-
+// no outer range
 namespace klinika
 {
     public static class Program
@@ -11,26 +11,23 @@ namespace klinika
             int O_index = snake.IndexOf("O");
             string direc;
 
-            Console.WriteLine(snake);
-
-            
             while (true)
             {
+                Console.WriteLine(snake);
                 Console.WriteLine("Should I Stay or Should I Go (l/r):");
                 direc = Console.ReadLine();
                 if (direc.ToLower() == "r")
                 {
                     snake = GoRight(snake,O_index);
                     O_index++;
-                    Console.WriteLine(snake);
                 }
                 else if (direc.ToLower() == "l")
                 {
                     snake = GoLeft(snake, O_index);
                     O_index--;
-                    Console.WriteLine(snake);
                 }
-
+                
+                Console.Clear();
             }
 
         }
