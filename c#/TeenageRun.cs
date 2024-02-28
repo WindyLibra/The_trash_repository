@@ -11,7 +11,7 @@ namespace Program
         {
             Console.WriteLine("Welcome to Daily Teenage Run.\nWhat would you like?\n\nFor help, you can type \"help\" without brackets.");
             List<string> Titles = new List<string>();
-            string[] Ttl = { "Detergent", "Defend of Lilluputes", "Hell-Piercing Super Drill", "Magic Fight" };
+            string[] Ttl = { "Detergent", "Eren cosplaying Hitler", "Need for woman touching", "You're my special" };
 
             bool doStuff = true;
 
